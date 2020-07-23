@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chpt 49-52 (Assignment No 08)</title>
+    <script src="app.js"></script>
+</head>
+<style>
+   .container {
+    text-align: center;
+}
+
+.close:hover,.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #0f0909;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+   
+  }
+  .modal-content {
+    background-color: #fefefeab;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+  }
+ .button {
+   font-size: 20px;
+   font-weight: bold;
+   background-color: wheat;
+   margin-top: 20px;
+ }
+ .input {
+   font-size: 20px;
+ }
+ .counter {
+   text-align: center;
+ } 
+</style>
+<body>
+    <!--TASK 01-->
+    <div class="container">
+        <h1>SIGN UP</h1>
+        <form action="#">
+            <label for="name"><b>Name</b></label>
+        <input type="text" id="name" placeholder="Enter name" name="name" required><br><br>
+        <label for="email"><b>Email</b></label>
+        <input type="text" id="e-mail" placeholder="Enter Email" name="email" required><br><br>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" id="password" placeholder="Enter Password" name="psw" required><br><br>
+    
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" id="conPassword" placeholder="Repeat Password" name="psw-repeat" required><br><br>
+    
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember my data
+        </label><br><br>
+        <button type="submit" onclick="submission()">SUBMIT</button>
+        </form>
+    </div>
+
+
+    <!--TASK 02-->
+    <p id="paragraph">
+        A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.For example:
+        <a href="#" onClick="readMore();"><em>Read more.</em></a>
+    </p>
+    
+</body>
+</html>
